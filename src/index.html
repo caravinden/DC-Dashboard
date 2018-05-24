@@ -1,0 +1,41 @@
+<html>
+<head>
+<link href="css/dc.css" rel="stylesheet">
+<script type="text/javascript" src='js/lib/crossfilter.js'></script>
+<script type="text/javascript" src='js/lib/d3.v5.js'></script>
+<script type="text/javascript" src='js/lib/dc.js'></script>
+
+</head>
+<body>
+<div style="margin-top: -50px;">
+        <div class="divForms" style="border: solid; border-color: gray; border-radius: 5px; border-width: 1px; text-align:center; padding-left:20px;">
+            <div style="margin-bottom: 20px; width: 100%;">
+                <div style="text-align: right; padding-right: 20px; float: right; width: 44%;">
+                    <a id="lnk_Reset" href="javascript:dc.filterAll(); dc.renderAll();">Reset</a>
+                </div>
+                <div style="text-align: center; float: right;">
+                    <span>کالا : </span>
+                    <b>
+                        <asp:Label ID="lbl_Good" runat="server" Text=""></asp:Label></b>
+                </div>
+            </div>
+            <div id="sellerChart" style="direction: ltr !important"></div>
+            <div id="dateunitprice" style="direction: ltr !important"></div>
+            <table class="table table-condensed table-striped table-bordered table-hover no-margin" border="1" id="data-table" style="width: 100%; border-collapse: collapse; margin-left:5px;">
+                <thead>
+                    <tr class="HeaderStyle" style="color: #6484E5;">
+                        <th class="text-center" scope="col">Num Request</th>
+                        <th class="text-center" scope="col">Unit Requested</th>
+                        <th class="text-center" scope="col">User</th>
+                        <th class="text-center" scope="col">Seller</th>
+                        <th class="text-center" scope="col">Date</th>
+                        <th class="text-center" scope="col">Unit Price</th>
+                        <th class="text-center" scope="col">Count</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="js/dashboard.js"></script>
+</html>
