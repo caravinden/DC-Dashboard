@@ -434,7 +434,6 @@ datatable
 			return d.slr_Name
 		},
 		function (d) {
-			//return d.fct_Date.getFullYear() + ' ' + d.fct_Date.getMonth() + ' ' + d.fct_Date.getDate();
 			return d.ShamsiDate;
 		},
 		function (d) {
